@@ -36,7 +36,7 @@ class NumbersHelperTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(files = "/home/marcin/sources/advance-testing-sb/src/test/resources/oddFiles.csv")
+    @CsvFileSource(files = "src/test/resources/oddFiles.csv")
     @DisplayName("Check if number is odd - positive")
     public void isNotOddTestFromFile(int a) {
         //when
@@ -44,7 +44,4 @@ class NumbersHelperTest {
         //then
         Assertions.assertTrue(result);
     }
-
-
-
 }
